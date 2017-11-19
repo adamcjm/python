@@ -87,3 +87,4 @@
 # a.replace('a','A')
 # print(a)
 
+print('接下来该学习函数部分!')
