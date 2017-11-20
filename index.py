@@ -87,4 +87,55 @@
 # a.replace('a','A')
 # print(a)
 
-print('接下来该学习函数部分!')
+# 函数
+# print(abs(-100))
+# print(max([1,4,7]))
+# print(int(12.6))
+# print(float(12))
+# print(str(123))
+# print(bool(0))
+# print(bool(-1))
+# print(bool(1))
+# print(bool(''))
+# print(hex(123))
+
+# def my_abs(x):
+#     if(x >= 0):
+#         return x
+#     else:
+#         return -x
+# a = -5
+# print(my_abs(a))
+
+# from myabs import myabs
+# print(myabs(-100))
+
+# def nop():
+#     pass
+
+# if age >= 18:
+#     pass
+
+# print(myabs('A'))
+# print(abs('A'))
+
+# def myabs(x):
+#     if not isinstance(x, (int,float)):
+#         raise TypeError('参数类型不是数字')
+#     if x >= 0:
+#         return x
+#     else:
+#         return -x
+# myabs('A')
+
+import math
+def move(x, y, step, angle=0):
+    nx = x + step * math.cos(angle)
+    ny = y + step * math.sin(angle)
+    return nx,ny
+x, y = move(100, 200, 60, math.pi / 6)
+print(x, y)
+r = move(100, 200, 60, math.pi / 6)
+print(r)
+
+# next函数的参数
