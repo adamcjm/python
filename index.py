@@ -128,14 +128,85 @@
 #         return -x
 # myabs('A')
 
-import math
-def move(x, y, step, angle=0):
-    nx = x + step * math.cos(angle)
-    ny = y + step * math.sin(angle)
-    return nx,ny
-x, y = move(100, 200, 60, math.pi / 6)
-print(x, y)
-r = move(100, 200, 60, math.pi / 6)
-print(r)
+# import math
+# def move(x, y, step, angle=0):
+#     nx = x + step * math.cos(angle)
+#     ny = y + step * math.sin(angle)
+#     return nx,ny
+# x, y = move(100, 200, 60, math.pi / 6)
+# print(x, y)
+# r = move(100, 200, 60, math.pi / 6)
+# print(r)
 
-# next函数的参数
+# 函数的参数
+# 位置参数
+# def power(x):
+#     return x * x
+# print(power(10))
+
+# def power(x, n=2):
+#     s = 1
+#     while n > 0:
+#         n = n - 1
+#         s = s * x
+#     return s
+# print(power(5))
+
+# def enroll(name, gender, age=6, city='上海'):
+#     print(name,'性别：',gender, ',年龄：', age, ',来自', city, '.')
+# enroll('杨', '男', 18, '北京')
+
+# def add_end(L= []):
+#     L.append('end')
+#     return L
+# print(add_end())
+# print(add_end())
+
+# def add_end(L = None):
+#     if L is None:
+#         L = []
+#     L.append('end')
+#     return L
+# print(add_end())
+# print(add_end())
+# print(add_end())
+
+# for x in [1,2,3,4]:
+#     print(x)
+
+# sum = 0
+# n = 99
+# while n > 0:
+#     n -= 2
+#     sum += n
+# print(sum)
+# print(n)
+
+# def calc(*numbers):
+#     sum = 0
+#     for n in numbers:
+#         sum = sum + n * n
+#     print(sum)
+# calc(*[1,2,3,4])
+# calc(1,2,3,4)
+
+# def person(name, age, **kw):
+#     print(name)
+#     print(age)
+#     print(kw)
+# # person('Adam', 10, city='sh', gender = 'nan')
+# a = {'city': 'sh', 'gender': 'nan'}
+# # person('Adam', 15, **a)
+# person('Jhon', 18, city=a['city'], gender=a['gender'])
+# person('Lisa', 20, **a)
+
+# def person(name, age, **kw):
+#     if 'city' in kw:
+#         print('yes-city')
+#         pass
+#     if 'gender' in kw:
+#         print('yes-gender')
+#         pass
+# # person('Adam', 6, city='sh')
+# a = {'city': 'sh', 'gender': 'f'}
+# person('Jhon', 1, **a)
