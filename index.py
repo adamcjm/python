@@ -239,3 +239,11 @@
 # # enroll('mike', 'f')
 # enroll('mike', 'f', city = 'sz')
 
+# 定义默认参数一定要牢记：默认参数一定要指向不变对象
+def add_end ( L = [] ):
+    L.append('END')
+    print(L)
+    # return L
+add_end()
+add_end()
+add_end()
